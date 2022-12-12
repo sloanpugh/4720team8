@@ -69,9 +69,16 @@
   <ItemGroup>
     <Content Include="Delete.aspx" />
     <Content Include="Images\container_header.png" />
+    <Content Include="Images\Desert.png" />
     <Content Include="Images\earth.png" />
     <Content Include="Images\foggy_tree_picture.png" />
+    <Content Include="Images\Jungle.png" />
+    <Content Include="Images\mountain.png" />
+    <Content Include="Images\News1.png" />
+    <Content Include="Images\News2.png" />
+    <Content Include="Images\News3.png" />
     <Content Include="Images\pattern.png" />
+    <Content Include="Images\Reef.png" />
     <Content Include="Login.aspx" />
     <Content Include="OrderConfirmation.aspx" />
     <Content Include="Registration.aspx" />
