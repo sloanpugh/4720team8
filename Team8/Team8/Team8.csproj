@@ -71,6 +71,7 @@
     <Content Include="Images\container_header.png" />
     <Content Include="Images\earth.png" />
     <Content Include="Images\foggy_tree_picture.png" />
+    <Content Include="Images\pattern.png" />
     <Content Include="Login.aspx" />
     <Content Include="OrderConfirmation.aspx" />
     <Content Include="Registration.aspx" />
