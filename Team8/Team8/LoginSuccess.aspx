@@ -19,11 +19,13 @@
     <p class="auto-style3">
         <span class="auto-style4">You have successfully logged in as
         <asp:Label ID="lblUser" runat="server"></asp:Label>
-        </span>.</p>
+        </span></p>
     <p>
     </p>
-    <p>
-    </p>
+    <p class="auto-style3">
+        You may view your account information
+        <asp:HyperLink ID="hplAccount" runat="server" NavigateUrl="~/Update.aspx">here</asp:HyperLink>
+        .</p>
     <p>
     </p>
     <p>
