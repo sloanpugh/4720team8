@@ -62,6 +62,7 @@
                 </div>
                 <div id="footer">
                     <div id="footer_content">
+                        <asp:HyperLink ID="hl_Account" runat="server" CssClass="links" Font-Underline="False" NavigateUrl="~/Update.aspx">Manage Your Account</asp:HyperLink>
                     </div>
                 </div>
             </div>

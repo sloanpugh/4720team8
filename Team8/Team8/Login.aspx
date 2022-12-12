@@ -24,7 +24,14 @@
         text-align: center;
         height: 30px;
     }
-</style>
+        .auto-style11 {
+            width: 98px;
+            height: 21px;
+        }
+        .auto-style12 {
+            height: 21px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style4">
@@ -69,16 +76,40 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" class="auto-style6">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td align="center" class="auto-style11"></td>
+                    <td class="auto-style12">&nbsp;</td>
                 </tr>
                 <tr>
                     <td align="center" class="auto-style6">&nbsp;</td>
                     <td>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:F22Team8ConnectionString %>" SelectCommand="SELECT * FROM [Customers] WHERE ([CustomerEmail] = @CustomerEmail)">
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:F22Team8ConnectionString %>" DeleteCommand="DELETE FROM [Customers] WHERE [Email] = @Email" InsertCommand="INSERT INTO [Customers] ([Email], [Address], [City], [State], [Zip], [FirstName], [LastName], [Password]) VALUES (@Email, @Address, @City, @State, @Zip, @FirstName, @LastName, @Password)" SelectCommand="SELECT * FROM [Customers] WHERE (([Email] = @Email) AND ([Password] = @Password))" UpdateCommand="UPDATE [Customers] SET [Address] = @Address, [City] = @City, [State] = @State, [Zip] = @Zip, [FirstName] = @FirstName, [LastName] = @LastName, [Password] = @Password WHERE [Email] = @Email">
+                            <DeleteParameters>
+                                <asp:Parameter Name="Email" Type="String" />
+                            </DeleteParameters>
+                            <InsertParameters>
+                                <asp:Parameter Name="Email" Type="String" />
+                                <asp:Parameter Name="Address" Type="String" />
+                                <asp:Parameter Name="City" Type="String" />
+                                <asp:Parameter Name="State" Type="String" />
+                                <asp:Parameter Name="Zip" Type="String" />
+                                <asp:Parameter Name="FirstName" Type="String" />
+                                <asp:Parameter Name="LastName" Type="String" />
+                                <asp:Parameter Name="Password" Type="String" />
+                            </InsertParameters>
                             <SelectParameters>
-                                <asp:Parameter Name="CustomerEmail" Type="String" />
+                                <asp:Parameter Name="Email" Type="String" />
+                                <asp:Parameter Name="Password" Type="String" />
                             </SelectParameters>
+                            <UpdateParameters>
+                                <asp:Parameter Name="Address" Type="String" />
+                                <asp:Parameter Name="City" Type="String" />
+                                <asp:Parameter Name="State" Type="String" />
+                                <asp:Parameter Name="Zip" Type="String" />
+                                <asp:Parameter Name="FirstName" Type="String" />
+                                <asp:Parameter Name="LastName" Type="String" />
+                                <asp:Parameter Name="Password" Type="String" />
+                                <asp:Parameter Name="Email" Type="String" />
+                            </UpdateParameters>
                         </asp:SqlDataSource>
                     </td>
                 </tr>
