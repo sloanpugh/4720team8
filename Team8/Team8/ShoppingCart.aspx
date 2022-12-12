@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="Team8.ShoppingCart" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style4 {
+            text-align: right;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="lavaLampWithImage">
@@ -20,7 +25,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style4">
                 <asp:CheckBox ID="cb_BSConsult" runat="server" TextAlign="Left" />
             </td>
             <td>
@@ -36,7 +41,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style4">
                 <asp:CheckBox ID="cb_ITConsult" runat="server" TextAlign="Left" />
             </td>
             <td>
@@ -52,7 +57,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style4">
                 <asp:CheckBox ID="cb_MSConsult" runat="server" TextAlign="Left" />
             </td>
             <td>
@@ -68,7 +73,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style4">
                 <asp:CheckBox ID="cb_MSServe" runat="server" TextAlign="Left" />
             </td>
             <td>
