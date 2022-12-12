@@ -37,7 +37,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style4">
     <tr>
-        <td class="auto-style5"><strong><span class="auto-style10">About Us</span></strong><br />
+        <td class="auto-style5" valign="top"><strong><span class="auto-style10">
+            <br />
+            About Us</span></strong><br />
             <br />
             <span class="auto-style11">We are a consulting company dedicated to helping non-profit organizations operate at their very best. It is important to us at The World Fund that our climate is protected by caring organizations for generations to come. Which is why we employ a team of successful consultants who understand how to advise and protect all the wonderful organizations that protect our forests, oceans, prairies, deserts, and jungles.
             <br />

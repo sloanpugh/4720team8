@@ -65,7 +65,7 @@
                 <tr>
                     <td align="center" class="auto-style6">&nbsp;</td>
                     <td class="auto-style3">
-                        <asp:Button ID="btnSubmit" runat="server" BackColor="#040434" BorderStyle="None" Font-Bold="True" ForeColor="White" Height="25px" Text="Sign In" Width="125px" />
+                        <asp:Button ID="btnSubmit" runat="server" BackColor="#040434" BorderStyle="None" Font-Bold="True" ForeColor="White" Height="25px" Text="Sign In" Width="125px" OnClick="btnSubmit_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -75,7 +75,11 @@
                 <tr>
                     <td align="center" class="auto-style6">&nbsp;</td>
                     <td>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:F22Team8ConnectionString %>" SelectCommand="SELECT * FROM [Customers] WHERE ([CustomerEmail] = @CustomerEmail)">
+                            <SelectParameters>
+                                <asp:Parameter Name="CustomerEmail" Type="String" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
                     </td>
                 </tr>
                 <tr>
