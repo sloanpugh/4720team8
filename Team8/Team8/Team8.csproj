@@ -68,13 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Delete.aspx" />
+    <Content Include="Images\container_header.png" />
+    <Content Include="Images\earth.png" />
+    <Content Include="Images\foggy_tree_picture.png" />
     <Content Include="Login.aspx" />
     <Content Include="OrderConfirmation.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="ShoppingCart.aspx" />
-    <Content Include="Transaction.aspx" />
+    <Content Include="StyleSheet.css" />
+    <Content Include="News.aspx" />
     <Content Include="Update.aspx" />
     <Content Include="Web.config" />
+    <Content Include="About.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Delete.aspx.cs">
@@ -120,12 +125,12 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="Transaction.aspx.cs">
-      <DependentUpon>Transaction.aspx</DependentUpon>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Transaction.aspx.designer.cs">
-      <DependentUpon>Transaction.aspx</DependentUpon>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
     </Compile>
     <Compile Include="Update.aspx.cs">
       <DependentUpon>Update.aspx</DependentUpon>
@@ -133,6 +138,13 @@
     </Compile>
     <Compile Include="Update.aspx.designer.cs">
       <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
