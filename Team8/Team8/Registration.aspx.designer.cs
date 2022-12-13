@@ -15,6 +15,24 @@ namespace Team8
     {
 
         /// <summary>
+        /// txtEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+
+        /// <summary>
+        /// rfvEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
+
+        /// <summary>
         /// txtFName control.
         /// </summary>
         /// <remarks>
@@ -22,6 +40,15 @@ namespace Team8
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFName;
+
+        /// <summary>
+        /// rfvFName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFName;
 
         /// <summary>
         /// txtLName control.
@@ -33,6 +60,15 @@ namespace Team8
         protected global::System.Web.UI.WebControls.TextBox txtLName;
 
         /// <summary>
+        /// rfvLName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLName;
+
+        /// <summary>
         /// txtAddress control.
         /// </summary>
         /// <remarks>
@@ -40,6 +76,15 @@ namespace Team8
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAddress;
+
+        /// <summary>
+        /// rfvAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAddress;
 
         /// <summary>
         /// txtCity control.
@@ -51,13 +96,31 @@ namespace Team8
         protected global::System.Web.UI.WebControls.TextBox txtCity;
 
         /// <summary>
-        /// tztState control.
+        /// rfvCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tztState;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCity;
+
+        /// <summary>
+        /// txtState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtState;
+
+        /// <summary>
+        /// rfvState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvState;
 
         /// <summary>
         /// txtZip control.
@@ -69,6 +132,15 @@ namespace Team8
         protected global::System.Web.UI.WebControls.TextBox txtZip;
 
         /// <summary>
+        /// rfvZip control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvZip;
+
+        /// <summary>
         /// txtPass control.
         /// </summary>
         /// <remarks>
@@ -78,6 +150,15 @@ namespace Team8
         protected global::System.Web.UI.WebControls.TextBox txtPass;
 
         /// <summary>
+        /// rfvPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPassword;
+
+        /// <summary>
         /// txtPassC control.
         /// </summary>
         /// <remarks>
@@ -85,6 +166,15 @@ namespace Team8
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassC;
+
+        /// <summary>
+        /// cvPassC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvPassC;
 
         /// <summary>
         /// lblError control.

@@ -4,6 +4,16 @@
         .auto-style4 {
             text-align: right;
         }
+        .auto-style5 {
+            height: 35px;
+        }
+        .auto-style6 {
+            height: 40px;
+        }
+        .auto-style7 {
+            height: 40px;
+            text-align: center;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -26,7 +36,7 @@
         </tr>
         <tr>
             <td class="auto-style4">
-                <asp:CheckBox ID="cb_BSConsult" runat="server" TextAlign="Left" />
+                <asp:CheckBox ID="cb_BSConsult" runat="server" TextAlign="Left" OnCheckedChanged="cb_BSConsult_CheckedChanged" />
             </td>
             <td>
                 <asp:Label ID="lbl_BusinessStrat" runat="server" Font-Size="Medium" Text="Business Strategy Consultation"></asp:Label>
@@ -42,7 +52,7 @@
         </tr>
         <tr>
             <td class="auto-style4">
-                <asp:CheckBox ID="cb_ITConsult" runat="server" TextAlign="Left" />
+                <asp:CheckBox ID="cb_ITConsult" runat="server" TextAlign="Left" OnCheckedChanged="cb_ITConsult_CheckedChanged" />
             </td>
             <td>
                 <asp:Label ID="lbl_ITStrategy" runat="server" Font-Size="Medium" Text="Information Technology Strategy Consultation"></asp:Label>
@@ -58,7 +68,7 @@
         </tr>
         <tr>
             <td class="auto-style4">
-                <asp:CheckBox ID="cb_MSConsult" runat="server" TextAlign="Left" />
+                <asp:CheckBox ID="cb_MSConsult" runat="server" TextAlign="Left" OnCheckedChanged="cb_MSConsult_CheckedChanged" />
             </td>
             <td>
                 <asp:Label ID="lbl_MarketingStrat" runat="server" Font-Size="Medium" Text="Marketing Strategy Consultation"></asp:Label>
@@ -74,7 +84,7 @@
         </tr>
         <tr>
             <td class="auto-style4">
-                <asp:CheckBox ID="cb_MSServe" runat="server" TextAlign="Left" />
+                <asp:CheckBox ID="cb_MSServe" runat="server" TextAlign="Left" OnCheckedChanged="cb_MSServe_CheckedChanged" />
             </td>
             <td>
                 <asp:Label ID="lbl_MSServices" runat="server" Font-Size="Medium" Text="Managed Services"></asp:Label>
@@ -91,10 +101,22 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td class="auto-style5"></td>
+            <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="btn_CartSubmit" runat="server" Text="Submit Request" Width="325px" OnClick="btn_CartSubmit_Click" />
             </td>
+            <td class="auto-style5"></td>
+        </tr>
+        <tr>
+            <td class="auto-style6"></td>
+            <td class="auto-style7">
+                <asp:Label ID="lbl_Services" runat="server"></asp:Label>
+            </td>
+            <td class="auto-style6"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
