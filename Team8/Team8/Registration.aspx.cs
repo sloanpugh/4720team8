@@ -53,7 +53,7 @@ namespace Team8
 
             cmdInsert.Parameters.AddWithValue("@LastName", txtLName.Text.Trim());
 
-            cmdInsert.Parameters.AddWithValue("@Pass", txtPass.Text.Trim());
+            cmdInsert.Parameters.AddWithValue("@Password", txtPass.Text.Trim());
 
 
             //Opening the connection
@@ -70,10 +70,9 @@ namespace Team8
 
             //Redirecting to a page to let them know their account was created.
 
-            Response.Redirect("Confirmation.aspx");
+            Response.Redirect("RegConfirmation.aspx");
 
 
         }
-    }
     }
 }

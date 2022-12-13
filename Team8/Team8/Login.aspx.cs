@@ -38,7 +38,7 @@ namespace Team8
                 SqlCommand cmdSelect = new SqlCommand(SqlDataSource1.SelectCommand);
 
                 //Indicate Parameters
-                cmdSelect.Parameters.AddWithValue("@CustomerEmail", txtUser.Text.Trim());
+                cmdSelect.Parameters.AddWithValue("@Email", txtUser.Text.Trim());
 
                 //Connection to run on
                 cmdSelect.Connection = con;
@@ -55,10 +55,10 @@ namespace Team8
                 //Declare a while loop to get strings from result set
                 while (drReader.Read())
                 {
-                    UserID = drReader.GetString(1).Trim();
-                    Password = drReader.GetString(8).Trim();
-                    Name = drReader.GetString(6).Trim() + " " +
-                    drReader.GetString(7).Trim();
+                    UserID = drReader.GetString(0).Trim();
+                    Password = drReader.GetString(7).Trim();
+                    Name = drReader.GetString(5).Trim() + " " +
+                    drReader.GetString(6).Trim();
                 }
 
                 //Close connection

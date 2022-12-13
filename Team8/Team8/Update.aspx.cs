@@ -285,5 +285,25 @@ namespace Team8
                 txt_City.Visible = true;
             }
         }
+
+        protected void txt_Address_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txt_City_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txt_State_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txt_Zip_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
